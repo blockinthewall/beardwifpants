@@ -19,25 +19,26 @@ nav {
 }
 
 .header {
-    width: 400px;
+    position: absolute;
+    width: 450px;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 
 .social-links {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 10px;
+    align-items: center;
+    padding: 8px;
     background-color: #F1F5F9;
     border: solid;
     border-color: transparent;
     border-radius: 45px;
-    height: 25px;
 }
 
 .social-links img {
-    width: 25px;
-    height: auto;
-    margin: 0 3px;
+    width: 23px;
+    margin: 0 5px;
 }
 
 .container {
@@ -109,13 +110,18 @@ nav {
     animation: floating 3s ease-in-out infinite; /* Apply floating animation */
 }
 
-@media (max-width: 750px) {
+
+/* MOBILE SCREENS */
+
+@media (max-width: 1024px) {
     body {
         padding: 1%;
     }
 
     .header {
-        width: 300px;
+        position:static;
+        width: 600px;
+        transform: translateX(0);
     }
 
     nav {
@@ -126,24 +132,223 @@ nav {
     .container {
      flex-direction: column-reverse;
      justify-content: space-between;
-     height: 120vh
+     align-items: center;
+     height: 90vh;
     }
 
+.icon {
+    width: 80px;
+}
+
+.sub-container {
+    width: 600px;
+    top: 40%;
+}
+
     .main-img {
-        top: 30%;
+        width: 350px;
+        top: 40%;
     }
 
     .wallet-n-coins {
-        top: 80%;
+        width: 300px;
+        top: 93%;
+        left: 75%;
     }
 
-    .sun-hat {
-        top: 10%;
+    .board {
+        width: 400px;
+    }
+
+    .social-links img {
+        width: 35px;
+        margin: 0 3px;
+        height: auto;
+    }
+        
+    }
+
+    @media (max-width: 1024px) {
+        .header {
+            width: 350px;
+        }
+    
+        .sub-container {
+            width: 375px;
+            top: 60%;
+        }
+    
+        .main-img {
+            top: 30%;
+            width: 225px;
+        }
+
+        .wallet-n-coins {
+            width: 200px;
+            top: 70%;
+        }
+
+
+
+        .container {
+            height: 110vh;
+        }
+
+        .social-links img {
+            width: 20px;
+        }
+     }
+
+
+
+ @media (max-width: 820px) {
+    .header {
+        width: 350px;
+    }
+
+    .sub-container {
+        width: 425px;
+        top: 50%;
+    }
+
+    .main-img {
+        width: 250px;
+    }
+
+    .wallet-n-coins {
+        width: 250px;
+    }
+
+    .container {
+        height: 115vh;
+    }
+
+    .social-links img {
+        width: 20px;
+    }
+ }
+
+ @media (max-width: 768px) {
+    .container {
+        height: 110vh;
+    }
+
+    .sub-container {
+        width: 400px;
+        top: 50%;
+    }
+
+    .main-img {
+        width: 225px;
+    }
+
+    .wallet-n-coins {
+        width: 225px;
+        top: 70%;
+    }
+
+    .header {
+        width: 350px;
+    }
+
+    .social-links img {
+        width: 20px;
+    }
+
+ }
+
+ @media (max-width: 540px) {
+    .header {
+        width: 250px;
+    }
+
+    .board {
+        width: 350px;
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    .sub-container {
+        width: 350px;
+        top: 50%;
+    }
+
+    .main-img {
+        width: 200px;
+        top: 25%;
+    }
+
+    .wallet-n-coins {
+        width: 200px;
+        top: 56%;
+    }
+ }
+
+ @media (max-width: 470px) {
+    .container {
+        height: 95vh;
+    }
+
+    .sub-container {
+        top: 50%;
+    }
+ 
+
+}
+
+ @media (max-width: 412px) {
+    .container {
+        height: 100vh;
+    }
+ 
+
+}
+
+@media (max-width: 375px) {
+    .container {
+        height: 110vh;
+    }
+
+    .sub-container {
+        width: 300px;
+        top: 60%;
+    }
+
+    .main-img {
+        width: 175px;
     }
 
     .board {
         width: 300px;
     }
-
- }
  
+
+}
+
+@media (max-height: 900px) {
+    .container {
+        height: 130vh;
+    }
+}
+
+@media (max-height: 700px) {
+ .container {
+    height: 150vh;
+ }
+
+ .sub-container {
+    top: 70%;
+ }
+}
+
+@media (max-height: 620px) {
+    .container {
+       height: 160vh;
+    }
+   
+    .sub-container {
+       top: 80%;
+    }
+   }
