@@ -133,7 +133,6 @@ nav {
      flex-direction: column-reverse;
      justify-content: space-between;
      align-items: center;
-     min-height: 90vh;
     }
 
     .icon {
@@ -182,7 +181,6 @@ nav {
 
  @media (max-width: 768px) {
     .container {
-        min-height: 95vh;
     }
     
     .sub-container {
@@ -218,12 +216,6 @@ nav {
         width: 250px;
     }
 
-    .container {
-        min-height: 80vh;
-    }
-
-    
-
     .sub-container {
         width: 350px;
         top: 50%;
@@ -257,10 +249,6 @@ nav {
 
 
 @media (max-width: 375px) {
-    .container {
-        min-height: 75vh;
-    }
-
     .sub-container {
         width: 300px;
         top: 60%;
